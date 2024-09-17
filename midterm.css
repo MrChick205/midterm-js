@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.open-form {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.open-form:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: none;
+    width: 300px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],input[type="file"] {
+    width: calc(100% - 80px);
+    padding: 5px;
+    margin-left: 40px;
+}
+
+#product-area {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+
+.card {
+    width: 18rem;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 10px;
+    margin-left: 20px;
+}
+#p-nu, #p-nam{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media (max-width: 320px) {
+    form {
+        width: 90%;
+    }
+}
